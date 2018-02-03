@@ -3,7 +3,10 @@ import { View, Button, Text } from "react-native";
 
 export default self => (
   <View>
-    <Text>home2</Text>
-    <Button title="goHome1" onPress={() => self.navigation.navigate("ScreenSome1")} />
+    <Text>some2</Text>
+    <Button
+      title="goHome"
+      onPress={() => self.navigation.navigate("ScreenHome")}
+    />
   </View>
 );

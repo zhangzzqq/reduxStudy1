@@ -14,5 +14,4 @@ export default class ScreenHome extends Component {
   render() {
     return view(this);
   }
-
 }
