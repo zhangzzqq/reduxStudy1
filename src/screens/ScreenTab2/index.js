@@ -35,14 +35,14 @@ class ScreenTab2 extends Component {
 }
 
 // 将 store 中的状态映射（map）到当前组件的 props 中
-function mapStateToProps2(state) {
-  return { userInfo: state.userInfo };
+function mapStateToProps(state) {
+  return { userInfo: state.reducers.userInfo };
 }
 
-// 将actions中定义的方法映射到当前组件的 props 中
+// 将 actions 中定义的方法映射到当前组件的 props 中
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(actionCreators, dispatch);
 }
 
 // 将 store 和 当前组件连接（connect）起来
-export default connect(mapStateToProps2, mapDispatchToProps)(ScreenTab2);
+export default connect(mapStateToProps, mapDispatchToProps)(ScreenTab2);
